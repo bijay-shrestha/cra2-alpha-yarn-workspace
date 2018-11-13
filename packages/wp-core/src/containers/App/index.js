@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
-import Hello from 'wp-core/components/Hello';
-import Header from 'wp-core/components/Header';
+import Hello from 'wp-core/dist/components/Hello';
+import Header from 'wp-core/dist/components/Header';
 
 class App extends Component {
   render() {

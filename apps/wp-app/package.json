@@ -9,21 +9,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    "analyze": "node scripts/analyzeBuild.js",
+    "format": "prettier --write src/**/*.{js,jsx,json,css}",
+    "lint": "eslint src/**/*.js"
   },
   "devDependencies": {
     "prettier": "^1.12.1"
   },
-  "browserslist": {
-    "development": [
-      "last 2 chrome versions",
-      "last 2 firefox versions",
-      "last 2 edge versions"
-    ],
-    "production": [
-      ">0.25%",
-      "not op_mini all",
-      "ie 11"
-    ]
-  }
+  "browserslist": [
+    "> 0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

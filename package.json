@@ -10,17 +10,32 @@
   "scripts": {
     "clean": "lerna clean --yes",
     "reset": "yarn run clean && yarn",
-    "start": "cd apps/wp-app && yarn start",
-    "build": "cd apps/wp-app && yarn build"
+    "start": "lerna run --parallel start",
+    "build": "lerna --stream --concurrency 1 run build",
+    "analyze": "lerna run --parallel analyze",
+    "format": "lerna run --parallel format",
+    "lint": "lerna run --parallel lint",
+    "test": "lerna run --parallel test"
   },
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "2.0.0-next.a671462c"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
   },
   "devDependencies": {
+    "@babel/cli": "7.1.2",
+    "@babel/core": "7.1.2",
+    "@babel/runtime": "7.1.2",
+    "babel-preset-react-app": "^5.0.3",
+    "cross-env": "^5.2.0",
+    "eslint-config-react-app": "^3.0.5",
     "lerna": "^3.4.3",
-    "prettier": "^1.12.1"
+    "prettier": "^1.12.1",
+    "webpack-bundle-analyzer": "^3.0.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
   }
 }
