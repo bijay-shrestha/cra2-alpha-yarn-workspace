@@ -1,0 +1,26 @@
+{
+  "name": "wp-web-cloud",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "clean": "lerna clean --yes",
+    "reset": "yarn run clean && yarn",
+    "start": "cd apps/wp-app && yarn start",
+    "build": "cd apps/wp-app && yarn build"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "2.0.0-next.a671462c"
+  },
+  "devDependencies": {
+    "lerna": "^3.4.3",
+    "prettier": "^1.12.1"
+  }
+}
