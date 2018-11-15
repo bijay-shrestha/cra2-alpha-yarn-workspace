@@ -5,12 +5,14 @@ import App from './App';
 import { AppContainer } from 'react-hot-loader';
 import * as serviceWorker from './serviceWorker';
 
+const rootEl = document.getElementById('root');
+
 const renderApp = Component => {
   ReactDOM.render(
     <AppContainer>
       <Component />
     </AppContainer>,
-    document.getElementById('root')
+    rootEl
   );
 };
 
