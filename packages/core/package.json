@@ -1,9 +1,9 @@
 {
-  "name": "@customer/core",
+  "name": "@company/core",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@customer/shared": "^0.1.0"
+    "@company/shared": "^0.1.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,5 +1,5 @@
 {
-  "name": "@customer/cra2-workspace",
+  "name": "@company/cra2-workspace",
   "private": true,
   "workspaces": {
     "packages": [
@@ -8,7 +8,7 @@
     ]
   },
   "scripts": {
-    "clean": "lerna clean --yes && rimraf node_modules/@customer",
+    "clean": "lerna clean --yes && rimraf node_modules/@company",
     "reset": "yarn run clean && yarn",
     "start": "lerna run --parallel start",
     "test": "lerna run --parallel test",
