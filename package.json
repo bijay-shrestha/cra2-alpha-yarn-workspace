@@ -9,7 +9,9 @@
   },
   "scripts": {
     "clean": "lerna clean --yes && rimraf node_modules/@company",
+    "clean:all": "lerna clean --yes && rimraf yarn.lock && rimraf node_modules/*",
     "reset": "yarn run clean && yarn",
+    "reset:all": "yarn run clean:all && yarn",
     "start": "lerna run --parallel start",
     "test": "lerna run --parallel test",
     "build": "lerna --stream --concurrency 1 run build",
