@@ -1,0 +1,19 @@
+{
+  "name": "@customer/app-shared",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@customer/core": "^0.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.{js,jsx,json,css}",
+    "analyze": "node scripts/analyzeBuild.js"
+  },
+  "devDependencies": {
+  }
+}
