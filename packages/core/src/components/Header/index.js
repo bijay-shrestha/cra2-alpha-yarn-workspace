@@ -21,7 +21,6 @@ class Header extends PureComponent {
       <header className="App-header">
         <p>{title}</p>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>This is apps/app-shared</p>
         <Hello name={name} />
         <p>
           <Link url="https://reactjs.org" title="Learn React" />

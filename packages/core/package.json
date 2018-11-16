@@ -12,9 +12,27 @@
     "react-scripts": "2.1.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.1.0"
   },
   "scripts": {
     "lint": "eslint src/**/*.js",
     "format": "prettier --write **/*.{js,jsx,json,css}"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ],
+    "env": {
+      "dev": {
+        "plugins": [
+          "transform-es2015-modules-commonjs",
+          "@babel/plugin-proposal-class-properties"
+        ]
+      }
+    }
   }
 }
