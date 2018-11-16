@@ -1,12 +1,10 @@
 {
   "name": "@company/cra2-workspace",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "apps/*",
-      "packages/*"
-    ]
-  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "clean": "lerna clean --yes && rimraf node_modules/@company",
     "clean:all": "lerna clean --yes && rimraf yarn.lock && rimraf node_modules/*",
