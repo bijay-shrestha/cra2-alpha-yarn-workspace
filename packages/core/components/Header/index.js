@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Link from '@company/shared/components/Link';
 import logo from './logo.svg';
-import Hello from '../Hello/index';
+import Hello from '../Hello';
 
 class Header extends PureComponent {
   static propTypes = {
