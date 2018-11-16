@@ -22,7 +22,7 @@
   "react-scripts": {
     "workspaces": {
       "development": true,
-      "production": true,
+      "production": false,
       "package-entry": "main:src"
     }
   },
