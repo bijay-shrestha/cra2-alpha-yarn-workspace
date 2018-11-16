@@ -20,6 +20,11 @@
     "lint": "lerna run --parallel lint"
   },
   "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-hot-loader": "^4.3.12",
+    "react-scripts": "2.0.0-next.a671462c"
   },
   "devDependencies": {
     "lerna": "^3.4.3",
