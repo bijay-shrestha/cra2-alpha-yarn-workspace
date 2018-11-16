@@ -2,6 +2,7 @@
   "name": "@company/shared",
   "version": "0.1.0",
   "private": true,
+  "main:src": "src/index.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
