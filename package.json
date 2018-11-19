@@ -17,7 +17,13 @@
     "format": "lerna run --parallel format",
     "lint": "lerna run --parallel lint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@f1lt3r/react-scripts": "2.1.1-zeta-001",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-hot-loader": "^4.3.12"
+  },
   "devDependencies": {
     "lerna": "^3.4.3",
     "rimraf": "^2.6.2",

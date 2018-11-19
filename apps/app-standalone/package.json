@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-hot-loader": "^4.3.12",
-    "@f1lt3r/react-scripts": "^2.1.1-zeta-001"
   },
   "scripts": {
     "start": "react-scripts start",
