@@ -8,5 +8,8 @@
   "scripts": {
     "lint": "eslint src/**/*.js",
     "format": "prettier --write **/*.{js,jsx,json,css}"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }

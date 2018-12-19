@@ -16,7 +16,7 @@ class Header extends PureComponent {
   render() {
     const { title } = this.props;
     const { name } = this.state;
-    const unused;
+    const unused = true; // <- Here to test lint warning
 
     return (
       <header className="App-header">

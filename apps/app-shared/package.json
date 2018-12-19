@@ -15,5 +15,8 @@
     "analyze": "node scripts/analyzeBuild.js"
   },
   "devDependencies": {
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }
