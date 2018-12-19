@@ -5,7 +5,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 process.env.NODE_ENV = 'production';
 
-const webpackConfigProd = require('react-scripts/config/webpack.config.prod');
+const webpackConfigProd = require('@f1lt3r/react-scripts/config/webpack.config.prod');
 
 webpackConfigProd.plugins.push(
   new BundleAnalyzerPlugin({
