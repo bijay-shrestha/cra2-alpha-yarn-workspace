@@ -16,6 +16,7 @@ class Header extends PureComponent {
   render() {
     const { title } = this.props;
     const { name } = this.state;
+    const unused;
 
     return (
       <header className="App-header">
