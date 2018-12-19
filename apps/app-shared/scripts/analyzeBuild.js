@@ -14,4 +14,4 @@ webpackConfigProd.plugins.push(
   })
 );
 
-require('react-scripts/scripts/build');
+require('@f1lt3r/react-scripts/scripts/build');
