@@ -12,7 +12,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "format": "prettier --write src/**/*.{js,jsx,json,css}",
-    "analyze": "node scripts/analyzeBuild.js"
+    "analyze": "yarn run build -- --stats && webpack-bundle-analyzer build/bundle-stats.json"
   },
   "devDependencies": {
   },

@@ -27,7 +27,7 @@
   "devDependencies": {
     "lerna": "^3.4.3",
     "rimraf": "^2.6.2",
-    "webpack-bundle-analyzer": "^3.0.2"
+    "webpack-bundle-analyzer": "^3.0.3"
   },
   "prettier": {
     "singleQuote": true,
