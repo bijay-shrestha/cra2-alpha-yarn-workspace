@@ -4,7 +4,7 @@
   "private": true,
   "main:src": "src/index.js",
   "dependencies": {
-    "@company/shared": "^0.1.0"
+    "@company/shared": "0.1.0"
   },
   "devDependencies": {
   },

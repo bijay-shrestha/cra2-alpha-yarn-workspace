@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@company/core": "^0.1.0"
+    "@company/core": "0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

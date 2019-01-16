@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from '@company/core/src/components/Header';
+import {Header} from '@company/core';
 
 class App extends Component {
   render() {
