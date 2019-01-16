@@ -2,13 +2,13 @@
   "name": "@company/core",
   "version": "0.1.0",
   "private": true,
-  "main:src": "./",
+  "main:src": ".",
   "dependencies": {
     "@company/shared": "0.1.0"
   },
   "devDependencies": {},
   "scripts": {
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint **/*.js",
     "format": "prettier --write **/*.{js,jsx,json,css}"
   },
   "eslintConfig": {
