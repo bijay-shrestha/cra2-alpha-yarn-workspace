@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  className="App-header"
+>
+  <p>
+    Header
+  </p>
+  <img
+    alt="logo"
+    className="App-logo"
+    src="logo.svg"
+  />
+  <p>
+    This is apps/app-shared
+  </p>
+  <div>
+    Hello 
+    React Coder
+  </div>
+  <p>
+    <a
+      className="App-link"
+      href="https://reactjs.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Learn React
+    </a>
+  </p>
+</header>
+`;

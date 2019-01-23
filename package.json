@@ -11,7 +11,7 @@
     "reset": "yarn run clean && yarn",
     "reset:all": "yarn run clean:all && yarn",
     "start": "lerna run --parallel start",
-    "test": "lerna run --parallel test",
+    "test": "jest",
     "build": "lerna --stream --concurrency 1 run build",
     "analyze": "lerna run --parallel analyze",
     "format": "lerna run --parallel format",
@@ -20,18 +20,66 @@
   "dependencies": {
     "@f1lt3r/react-scripts": "2.1.1-workspaces-04",
     "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-hot-loader": "^4.3.12"
   },
   "devDependencies": {
-    "lerna": "^3.4.3",
-    "rimraf": "^2.6.2",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "1.7.1",
+    "jest-prop-type-error": "^1.1.0",
+    "lerna": "^3.10.7",
+    "react-test-renderer": "^16.7.0",
+    "rimraf": "^2.6.3",
     "webpack-bundle-analyzer": "^3.0.3"
   },
   "prettier": {
     "singleQuote": true,
     "printWidth": 120
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "packages/**/src/**/*.{js,jsx,ts,tsx}"
+    ],
+    "resolver": "<rootDir>/node_modules/jest-pnp-resolver/index.js",
+    "setupFiles": [
+      "<rootDir>/node_modules/react-app-polyfill/jsdom.js",
+      "<rootDir>/scripts/test/setupTests.js",
+      "jest-prop-type-error"
+    ],
+    "testMatch": [
+      "<rootDir>/apps/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/apps/**?(*.)(spec|test).{js,jsxmts,tsx}",
+      "<rootDir>/packages/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/packages/**?(*.)(spec|test).{js,jsxmts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/scripts/test/babelTransform.js",
+      "^.+\\.css$": "<rootDir>/scripts/test/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/scripts/test/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
   },
   "browserslist": {
     "development": [

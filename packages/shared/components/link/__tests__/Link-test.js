@@ -1,9 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Link from '../../Link';
+import renderer from 'react-test-renderer';
+import Link from '@company/shared/components/Link';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Link url="https://reactjs.org" title="Learn React" />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('Link', () => {
+  const props = {
+    title: 'Learn React',
+    url: 'https://reactjs.org'
+  };
+
+  it('renders correctly', () => {
+    const tree = renderer.create(<Link {...props} />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
