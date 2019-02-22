@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Link from '@company/shared/components/Link';
+import { Link } from '@company/shared';
 
 describe('Link', () => {
   const props = {

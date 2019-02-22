@@ -1,14 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Header from '@company/core/components/Header';
+import { Hello } from '@company/core';
 
-describe('Header', () => {
+describe('Hello', () => {
   const props = {
-    title: 'Header'
+    name: 'Create React App'
   };
 
   it('renders correctly', () => {
-    const tree = renderer.create(<Header {...props} />).toJSON();
+    const tree = renderer.create(<Hello {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -2,7 +2,8 @@
   "name": "@company/core",
   "version": "0.1.0",
   "private": true,
-  "main:src": ".",
+  "main": "src/index.js",
+  "main:src": "src/index.js",
   "dependencies": {
     "@company/shared": "0.1.0"
   },
